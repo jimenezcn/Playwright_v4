@@ -115,6 +115,7 @@ describe('Test VMWare functionality on Browser', () => {
         const browser = await chromium.launch( { headless: false } );
         const context = await browser.newContext();
         const page = await context.newPage();
+        //Launch browser
         await page.goto('https://bc-advra-102.central.bccr.fi.cr/csp/gateway/portal/#/consumer');
         //await page.waitForTimeout(100000);
 
